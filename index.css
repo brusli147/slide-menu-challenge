@@ -1,0 +1,102 @@
+/* start styles */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&family=VT323&display=swap');
+
+body {
+  margin: 0;
+  background: #444;
+  font-family: "Poppins";
+}
+li, ul {
+  list-style-type: none;
+  padding: 0;
+}
+main {
+  padding: 140px 40px 40px;
+  color: #bbb;
+  align-items: center;
+  
+}
+
+/* solution styles */
+
+.menu{
+  display: flex;
+}
+
+
+.header {
+  background-color: rgb(27, 24, 24);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1{
+  color: #bbb;
+  margin-right: 20px;
+}
+
+.hamburger-menu{
+  position: relative;
+  display: inline-block;
+  margin-left: 15px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  background-color: #bbb;
+  margin: 6px 0;
+  width: 35px;
+  height: 2px;
+  transition: 0.4s;
+}
+
+.sidebar{
+  position: fixed;
+  z-index: 1;
+  width: 160px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(27, 24, 24);
+  padding-top: 60px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s linear;
+}
+
+.sidebar a{
+  margin-left: 15px;
+  text-decoration: none;
+  color: #bbb;
+  display: block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+/* open state */
+
+.slide.sidebar{
+  visibility: visible;
+  opacity: 1;
+}
+
+/* transitions */
+
+.slide .bar1{
+  transform: rotate(-45deg) translateY(12px);
+  background-color: red;
+}
+
+.slide .bar2{
+  opacity: 0;
+}
+
+.slide .bar3{
+  transform: rotate(45deg) translateY(-12px);
+  background-color: red;
+}
+
+
