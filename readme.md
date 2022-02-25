@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution]()
-- Live Site URL: [Live]()
+- Solution URL: [Solution](https://github.com/brusli147/slide-menu-challenge)
+- Live Site URL: [Live](https://brusli147.github.io/slide-menu-challenge/)
 
 ## My process
 
