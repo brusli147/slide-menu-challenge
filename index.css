@@ -56,22 +56,19 @@ h1{
 .sidebar{
   position: fixed;
   z-index: 1;
-  width: 160px;
+  width: 0px;
   height: 100%;
   top: 0;
-  left: 0;
   background-color: rgb(27, 24, 24);
   padding-top: 60px;
-  visibility: hidden;
-  opacity: 0;
-  transition: visibility 0s, opacity 0.3s linear;
+  transition: width 500ms;
 }
 
 .sidebar a{
   margin-left: 15px;
   text-decoration: none;
   color: #bbb;
-  display: block;
+  display: none;
   margin-top: 15px;
   cursor: pointer;
 }
@@ -79,8 +76,12 @@ h1{
 /* open state */
 
 .slide.sidebar{
-  visibility: visible;
-  opacity: 1;
+ width: 160px;
+}
+
+.slide a{
+  display: block;
+  
 }
 
 /* transitions */
@@ -98,5 +99,3 @@ h1{
   transform: rotate(45deg) translateY(-12px);
   background-color: red;
 }
-
-
